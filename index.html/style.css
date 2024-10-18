@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+    background-color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* font */
+    color:maroon; /* tamnija smeđa boja */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centriranje sadržaja */
+}
+
+.text-section {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: rgba(128, 0, 0, 0.861);
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orangered;
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px; /* maksimalna širina */
+}
+
+/* Box Styles sekcije */
+.styled-box {
+    background-color: rgba(255, 192, 203, 0.461);
+    color:maroon;
+    padding-inline: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mijn-portofolio {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Section Styles */
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+}
+
+.text-section {
+    flex: 1; /* zauzima preostali prostor */
+    padding: 20px;
+}
+
+.image-section {
+    flex: 0 0 30%; /* slika zauzima 30% širine */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%; /* slika se prilagođava */
+    height: auto; /* zadržava omjer */
+    border-radius: 20px; /* dodano za sve slike */
+}
+
+/* List Styles */
+section ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(237, 171, 171);
+}
+
+section li {
+    background-color: rgba(245, 245, 220, 0.637);
+    color: rgb(49, 48, 48);
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+section li:hover {
+    background-color: pink;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    width: 100%;
+    background-color: rgba(222, 178, 185, 0.858);
+    color: maroon;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+th, td {
+    padding: 10px;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid maroon;
+    resize: auto;
+    cursor: pointer;
+}
+
+button[type=submit] {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    background-color: rgb(239, 234, 181);
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .section {
+        flex-direction: column;
+    }
+    
+    .image-section {
+        margin-top: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    section {
+        font-size: large;
+    }
+}
