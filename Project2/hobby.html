@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <meta name="description" content="Mijn hobby's en interesses - Maria Linic">
+    <meta name="keywords" content="hobby, zwemmen, wandelen, programmeren, reizen">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="photos/idesign.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Idesign.jpg" type="image/x-icon"> 
 </head>
 <body>
     <header>
@@ -31,116 +35,253 @@
         </nav>
     </header>
 
-    <h1 class="text-center my-4">Hobby en Interesses</h1>
-    
-    <section class="container mb-4">
-        <div class="text-section">
-            <ul class="list-group">
-                <li class="list-group-item bg-beige"> <!-- Beige background -->
-                    <a href="https://unsplash.com/s/photos/beautiful-ocean" class="text-dark">Zwemmen</a>
-                </li>
-                <li class="list-group-item bg-dark"> <!-- Gray background -->
-                    <a href="https://unsplash.com/photos/a-forest-filled-with-lots-of-trees-next-to-a-lake-fmlZvLSxXj8" class="text-light">Wandelen</a>
-                </li>
-                <li class="list-group-item bg-beige"> <!-- Beige background -->
-                    <a href="https://www.coursera.org/articles/what-is-programming?msockid=19b1ba2808b06628120daf3609dc6772" class="text-dark">IT en programmeren</a>
-                </li>
-                <li class="list-group-item bg-dark"> <!-- Gray background -->
-                    <a href="https://bibliotheek.be/eboeken" class="text-light">Lezen</a>
-                </li>
-                <li class="list-group-item bg-beige"> <!-- Beige background -->
-                    <a href="https://netflix.com" class="text-dark">Films kijken</a>
-                </li>
-                <li class="list-group-item bg-dark"> <!-- Gray background -->
-                    <a href="https://euroreizen.be" class="text-light">Reizen</a>
-                </li>
-                <li class="list-group-item bg-beige"> <!-- Beige background -->
-                    <a href="https://youtube.com" class="text-dark">Muziek luisteren</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="hobby-intro">
+            <h1 class="mb-4">Hobby en Interesses</h1>
+            <p class="lead">Welkom op mijn hobby-pagina! Hier deel ik mijn passies en interesses die mijn leven verrijken en mij inspireren.</p>
         </div>
-    </section>
 
-    <section id="carousel" class="carousel slide carousel-small" data-bs-ride="carousel">
+        <section class="container mb-5">
+            <div class="row g-4">
+                <!-- Zwemmen -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-swimming-pool fa-2x me-3 text-primary"></i>
+                            <div>
+                                <h5 class="card-title mb-0">
+                                    <a href="https://unsplash.com/s/photos/beautiful-ocean" class="text-decoration-none text-dark stretched-link">Zwemmen</a>
+                                </h5>
+                                <small class="text-muted">Sport & Ontspanning</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- IT en Programmeren -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-laptop-code fa-2x me-3 text-info"></i>
+                            <div>
+                                <h5 class="card-title mb-0">
+                                    <a href="https://www.coursera.org/articles/what-is-programming" class="text-decoration-none text-dark stretched-link">IT en Programmeren</a>
+                                </h5>
+                                <small class="text-muted">Technologie</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Lezen -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-book-reader fa-2x me-3 text-warning"></i>
+                            <div>
+                                <h5 class="card-title mb-0">
+                                    <a href="https://bibliotheek.be/eboeken" class="text-decoration-none text-dark stretched-link">Lezen</a>
+                                </h5>
+                                <small class="text-muted">Educatie & Ontspanning</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Films Kijken -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-film fa-2x me-3 text-danger"></i>
+                            <div>
+                                <h5 class="card-title mb-0">
+                                    <a href="https://netflix.com" class="text-decoration-none text-dark stretched-link">Films Kijken</a>
+                                </h5>
+                                <small class="text-muted">Entertainment</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Reizen -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-plane-departure fa-2x me-3 text-purple"></i>
+                            <div>
+                                <h5 class="card-title mb-0">
+                                    <a href="https://euroreizen.be" class="text-decoration-none text-dark stretched-link">Reizen</a>
+                                </h5>
+                                <small class="text-muted">Avontuur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Muziek Luisteren -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-music fa-2x me-3 text-secondary"></i>
+                            <div>
+                                <h5 class="card-title mb-0">
+                                    <a href="https://youtube.com" class="text-decoration-none text-dark stretched-link">Muziek Luisteren</a>
+                                </h5>
+                                <small class="text-muted">Entertainment</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <div id="hobbyCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/Idesign.jpg" alt="Slide 1" class="d-block w-100 small-carousel-img">
+                <img src="img/sea.jpg" class="d-block w-100" alt="Zwemmen">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Zwemmen</h5>
+                    <p>Mijn favoriete sport voor ontspanning en fitness.</p>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="img/coffee.jpg" alt="Slide 2" class="d-block w-100 small-carousel-img">
+                <img src="img/walking.jpg" class="d-block w-100" alt="Wandelen">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Wandelen</h5>
+                    <p>Genieten van de natuur en frisse lucht.</p>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="img/chess.jpg" alt="Slide 3" class="d-block w-100 small-carousel-img">
+                <img src="img/code.jpg" class="d-block w-100" alt="Programmeren">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Programmeren</h5>
+                    <p>Creatieve oplossingen bouwen met code.</p>
+                </div>
             </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </section>
-
-
-    <section class="container my-4">
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title"> <strong>Zwemmen</strong></h1>
-                <p class="card-text">Zwemmen is een van mijn favoriete bezigheden. Het is niet alleen leuk, maar ook ontzettend gezond.</p>
-                <h2 class="card-title">Gezondheidsvoordelen:</h2>
-                <p class="card-text">Zwemmen is een geweldige cardiovasculaire oefening die helpt bij het verbeteren van de hart- en longfunctie. Het versterkt spieren en verbetert de flexibiliteit zonder de gewrichten te belasten, wat vooral gunstig is voor mensen met gewrichtsproblemen. Regelmatig zwemmen kan helpen bij het verminderen van stress en het verbeteren van de mentale gezondheid.</p>
-                <h2 class="card-title">Feiten over zwemmen:</h2>
-                <p class="card-text">Zwemmen verbrandt veel calorieën; een uur intensief zwemmen kan tot wel 500 calorieën verbranden. Het is een van de weinige sporten die bijna alle spiergroepen in het lichaam aanspreekt. Zwemmen kan de slaapkwaliteit verbeteren door het lichaam te ontspannen en de geest tot rust te brengen. Ik geniet van het gevoel van gewichtloosheid in het water, wat een unieke ervaring biedt die je nergens anders kunt vinden. Zwemmen geeft me een gevoel van vrijheid en ontspanning, weg van de dagelijkse stress.</p>
-                <p class="card-text">Zwemmen is een van mijn favoriete hobby's. Het helpt me ook om te ontspannen en mijn gedachten te verzetten. In de zomer zwem ik regelmatig in het water en probeer verschillende zwemstijlen te perfectioneren. Zwemmen heeft me geleerd hoe belangrijk het is om consistent te zijn en door te zetten, zelfs als het moeilijk wordt. Het is een activiteit die zowel mijn lichaam als geest versterkt. Daarnaast geniet ik van de sociale aspecten van zwemmen, zoals het ontmoeten van nieuwe mensen en het deelnemen aan zwemwedstrijden.</p>
+            <div class="carousel-item">
+                <img src="img/chess.jpg" class="d-block w-100" alt="Lezen">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Schaak</h5>
+                    <p>Spelen board-games met vrienden en familie.</p>
+                </div>
             </div>
-                <div class="image-section">
-                    <img src="img/sea.jpg" alt="Zwemmen" class="img-fluid">
+            <div class="carousel-item">
+                <img src="img/coffee.jpg" class="d-block w-100" alt="Films kijken">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Koffie liefhebber</h5>
+                    <p>Genieten van lekkere koffies.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/business.card.jpg" class="d-block w-100" alt="Reizen">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Reizen</h5>
+                    <p>Nieuwe culturen en plaatsen ontdekken.</p>
                 </div>
             </div>
         </div>
-    </section>
-
-<section class="container my-4">
-    <div class="card">
-        <div class="card-body">
-            <h1 class="card-title"><strong>Wandelen</strong></h1>
-            <p class="card-text">Wandelen is een van mijn favoriete bezigheden. Het is niet alleen leuk, maar ook ontzettend gezond.</p>
-            <h2 class="card-title">Gezondheidsvoordelen:</h2>
-            <p class="card-text">Wandelen is een andere hobby die ik erg waardeer. Het is een geweldige manier om de natuur te verkennen en tegelijkertijd actief te blijven.</p>
-            <h2 class="card-title">Voordelen van wandelen:</h2>
-            <p class="card-text">Wandelen helpt bij het verbeteren van de algehele gezondheid, het bevorderen van de bloedsomloop en het versterken van de spieren. Het is ook een uitstekende manier om stress te verminderen en je geest te verfrissen.</p>
-            <h2 class="card-title">Wandelroutes:</h2>
-            <p class="card-text">Ik geniet van het verkennen van verschillende wandelroutes, van rustige boswandelingen tot uitdagende bergtochten. Elke wandeling biedt een nieuwe ervaring en de mogelijkheid om te genieten van de schoonheid van de natuur.</p>
-        </div>
-        <div class="image-section">
-            <img src="img/walking.jpg" alt="Wandelen" class="img-fluid">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hobbyCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Vorige</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hobbyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Volgende</span>
+        </button>
     </div>
-</section>
 
-<section class="container my-4">
-    <div class="card">
-        <div class="card-body">
-            <h1 class="card-title"><strong>IT en Programmeren</strong></h1>
-            <p class="card-text">Mijn interesse in IT en programmeren is een belangrijke hobby voor mij. Het stelt me in staat om creatief te zijn en problemen op te lossen.</p>
-            <h2 class="card-title">Waarom programmeren?</h2>
-            <p class="card-text">Programmeren helpt me om logisch te denken en analytische vaardigheden te ontwikkelen. Het is ook een waardevolle vaardigheid in de moderne wereld, waar technologie een grote rol speelt.</p>
-            <h2 class="card-title">Projecten:</h2>
-            <p class="card-text">Ik werk aan verschillende projecten, van eenvoudige websites tot complexe applicaties. Het leren van nieuwe programmeertalen en technologieën houdt me gemotiveerd en betrokken.</p>
-        </div>
-        <div class="image-section">
-            <img src="img/code.jpg" alt="Programmeren" class="img-fluid">
-        </div>
+    <!-- Samenvatting van hobby's -->
+    <div class="container mb-5">
+        <h2 class="text-center mb-4">Overzicht van Mijn Hobby's</h2>
+        <p class="text-center">Mijn hobby's variëren van fysieke activiteiten zoals zwemmen en wandelen tot creatieve bezigheden zoals programmeren. Ik geniet ook van ontspannende activiteiten zoals lezen en films kijken, en ik verrijk mijn leven door te reizen en nieuwe ervaringen op te doen. Deze diverse interesses houden mijn leven boeiend en uitdagend.</p>
     </div>
-</section>
+
+
+    <div class="container my-5">
+        <!-- Zwemmen Section -->
+        <section id="zwemmen-section" class="mb-5">
+            <div class="row g-0 bg-light position-relative">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img src="img/sea.jpg" class="w-100" alt="Zwemmen" style="max-height: 400px; object-fit: cover;">
+                </div>
+            <div class="col-md-6 p-4 ps-md-0">
+                    <h2 class="mt-0">Zwemmen</h2>
+                    <p class="lead">Zwemmen is een van mijn favoriete bezigheden. Het is niet alleen leuk, maar ook ontzettend gezond.</p>
+                    <h5>Gezondheidsvoordelen:</h5>
+                    <ul>
+                        <li>Verbetert hart- en longfunctie</li>
+                        <li>Versterkt spieren en verbetert flexibiliteit</li>
+                        <li>Vermindert stress</li>
+                    </ul>
+                    <h5>Feiten over zwemmen:</h5>
+                    <ul>
+                        <li>Verbrandt tot 500 calorieën per uur</li>
+                        <li>Spreekt bijna alle spiergroepen aan</li>
+                        <li>Verbetert slaapkwaliteit</li>
+                    </ul>
+                    <button type="button" class="btn btn-primary mt-3" onclick="changeTextColor('zwemmen-section')">Lees meer over zwemmen</button>
+                </div>
+            </div>
+        </section>
+        <!-- Wandelen Section -->
+        <section id="wandelen-section" class="mb-5">
+            <div class="row g-0 bg-light position-relative">
+                <div class="col-md-6 mb-md-0 p-md-4 order-md-2">
+                    <img src="img/walking.jpg" class="w-100" alt="Wandelen" style="max-height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-4 pe-md-0">
+                    <h2 class="mt-0">Wandelen</h2>
+                    <p class="lead">Wandelen in de natuur kan de stemming verbeteren en gevoelens van geluk en welzijn bevorderen.</p>
+                    <h5>Gezondheidsvoordelen:</h5>
+                    <ul>
+                        <li>Stressvermindering</li>
+                        <li>Verbeterde stemming</li>
+                        <li>Fysieke gezondheid</li>
+                        <li>Creativiteit en focus</li>
+                    </ul>
+                    <h5>Voordelen van wandelen:</h5>
+                    <ul>
+                        <li>Verbetert algehele gezondheid</li>
+                        <li>Bevordert bloedsomloop</li>
+                        <li>Versterkt spieren</li>
+                    </ul>
+                    <button type="button" class="btn btn-success mt-3" onclick="changeTextColor('wandelen-section')">Ontdek wandelroutes</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- IT en Programmeren Section -->
+        <section id="programmeren-section" class="mb-5">
+            <div class="row g-0 bg-light position-relative">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                    <img src="img/code.jpg" class="w-100" alt="Programmeren" style="max-height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                    <h2 class="mt-0">IT en Programmeren</h2>
+                    <p class="lead">IT en programmeren zijn een van mijn favoriete bezigheden. Het is niet alleen boeiend, maar ook ontzettend waardevol in de moderne wereld.</p>
+                    <h5>Voordelen:</h5>
+                    <ul>
+                        <li>Verbetert mentale scherpte</li>
+                        <li>Bevordert probleemoplossend vermogen</li>
+                        <li>Biedt carrièremogelijkheden</li>
+                    </ul>
+                    <h5>Populaire programmeertalen:</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                    </ul>
+                    <button type="button" class="btn btn-info mt-3" onclick="changeTextColor('programmeren-section')">Leer meer over programmeren</button>
+                </div>
+            </div>
+        </section>
+    </div>
 
 <footer class="bg-dark text-white">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="mb-0">&copy; 2023 Maria Linic</p>
+                <p class="mb-0">&copy; 2024 Maria Linic</p>
             </div>
             <div class="col-md-6 text-right">
                 <a href="https://www.linkedin.com" target="_blank" class="text-white mx-2">
@@ -156,6 +297,18 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script>
+    function changeTextColor(sectionId) {
+        const section = document.getElementById(sectionId);
+        const textElements = section.querySelectorAll('p, h2, h5, li');
+        
+        textElements.forEach(element => {
+            element.classList.toggle('text-dark-blue');
+        });
+    }
+    </script>
 </body>
 </html>
 

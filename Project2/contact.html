@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/idesign.jpg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/Idesign.jpg" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -43,63 +44,83 @@
          </div>
     </header>
 
-    <div class="container mt-5">
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Error!</strong> A problem has occurred while submitting your data.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div class="container py-5">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 mb-4">Contact</h1>
+                <p class="lead">Neem contact met mij op voor vragen of samenwerkingen.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Contactgegevens</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-user me-2 text-primary"></i> Maria Linic</li>
+                            <li class="mb-3"><i class="fas fa-graduation-cap me-2 text-primary"></i> Graduaat Programmeren</li>
+                            <li class="mb-3"><i class="fas fa-map-marker-alt me-2 text-primary"></i> Antwerpen, België</li>
+                            <li class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i> maria.linic@student.be</li>
+                            <li class="mb-3"><i class="fas fa-phone me-2 text-primary"></i> +32 123 456 789</li>
+                            <li class="mb-3"><i class="fab fa-linkedin me-2 text-primary"></i> <a href="https://www.linkedin.com" target="_blank">LinkedIn Profiel</a></li>
+                            <li class="mb-3"><i class="fab fa-discord me-2 text-primary"></i> Discord: marialinic#1234</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Contactformulier</h2>
+                        <form action="https://tm-statweb.be/forms.php" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Naam en voornaam *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mailadres *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="skills" class="form-label">Interesse in skills</label>
+                                <select class="form-select" id="skills" name="skills">
+                                    <option value="">Selecteer een skill</option>
+                                    <option value="html">HTML</option>
+                                    <option value="css">CSS</option>
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="php">PHP</option>
+                                    <option value="sql">SQL</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Vraag</label>
+                                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Verstuur</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
 
-    <div class="container mt-5 header-section">
-        <h1 class="text-center">Contact</h1>
-
-        <div class="contact-info">
-            <p>Neem gerust contact met mij op via <a href="mailto:1058825@student.thomasmore.be">dit e-mail adres</a>.<br>
-            Of vul het formulier in en ik zal zo snel mogelijk reageren.</p>
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Maria Linic</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://www.linkedin.com" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
         </div>
-
-        <div class="contact-form">
-            <form action="mailto:1058825@student.thomasmore.be" method="post" enctype="text/plain">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Naam</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Uw naam" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@email.com" required>
-                </div>
-                <div class="mb-3">
-                    <label for="subject" class="form-label">Onderwerp</label>
-                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Onderwerp" required>
-                </div>
-                <div class="mb-3">
-                    <label for="question" class="form-label">Vraag</label>
-                    <textarea class="form-control" id="question" name="question" rows="5" placeholder="Uw tekst hier..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Stuur bericht</button>
-            </form>
-        </div>
-       
-        <div class="contact-image mt-4">
-           
-            <img class="img-fluid" src="img/email.jpg" alt="I love IT">
-        </div>
-    </div>
-
-    <footer class="text-center mt-5">
-        <nav>
-            <a href="index.html">Start</a> |
-            <a href="cv.html">CV</a> |
-            <a href="ervaring.html">Ervaring</a> |
-            <a href="hobby.html">Hobby</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-        <p>&copy; 2024 Maria Linic</p>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

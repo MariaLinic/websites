@@ -1,0 +1,242 @@
+/* General Styles */
+*
+{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+body 
+{
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    background-color: beige !important; /* Light background color */
+    color: maroon; /* Dark text color */
+    padding: 20px; /* Add padding around the body */
+}
+
+#rest-content {
+    transition: opacity 1s ease-in-out;
+}
+#skillsCarousel .carousel-item {
+    padding: 20px 0;
+}
+
+#skillsCarousel .fa {
+    color: #007bff; /* Možete promijeniti boju ikona */
+}
+/* Header Styles */
+header{
+    background-color: lightgrey; /* Header background color */
+    color: maroon; /* Header text color */
+    padding: 20px; /* Padding for the header */
+    text-align: center; /* Center the text */
+}
+
+h1
+{
+    color: maroon; /* Header text color */
+    text-align: center; /* Center the text */
+}
+
+.styled-box {
+    background-color: lightgray; /* Box background color */
+    color: maroon; /* Box text color */
+    padding: 10px; /* Padding for the box */
+    text-align: center; /* Center the text */
+}
+
+.hero 
+{
+    background-color: beige; /* Hero background color */
+    color: maroon; /* Hero text color */
+    padding: 20px; /* Padding for the hero */
+    text-align: center; /* Center the text */
+    position: relative; /* Positioning for hero */
+}
+
+/* Navbar Styles */
+#nav-bar 
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: lightgray; /* Navbar background color */
+    color: maroon; /* Navbar text color */
+    text-align: center;
+    padding: 10px; /* Padding for the navbar */
+    margin-bottom: 20px; /* Space below the navbar */
+}
+
+#nav-bar .nav-link {
+    font-style: oblique;
+    color: maroon; /* Navbar link color */
+    text-decoration: none; /* Remove underline from navbar links */
+}
+
+.nav-link:hover {
+    background-color: beige; /* Lighter background color on hover */
+    border-radius: 10px; /* Rounded corners on hover */
+    color: maroon; /* Navbar link text color on hover */
+}
+
+.carousel-small {
+    max-width: 600px; /* Postavite maksimalnu širinu karusela */
+    margin: 0 auto; /* Centrirajte karusel */
+}
+
+.small-carousel-img {
+    height: auto; /* Održavajte proporcije slika */
+    max-height: 400px; /* Postavite maksimalnu visinu slika */
+    object-fit: cover; /* Održavajte proporcije slika unutar okvira */
+}
+.carousel {
+    margin-bottom: 20px; /* Space below the carousel */
+    width: 100%; /* Full width */
+    position: center;
+    border: 1px solid lightgray; /* Carousel border color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: gray; /* Carousel background color */
+    color: maroon; /* Carousel text color */
+
+}
+.carousel-button {
+    background-color: lightgray; /* Button background color */
+    color: maroon; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for the button */
+    margin-top: 10px; /* Space above the button */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid gray; /* Card border color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px maroon; /* Subtle shadow */
+    padding: 10px; /* Padding for the card */
+    background-color: blanchedalmond; /* Card background color */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger font size for the title */
+    color: maroon; /* Darker color for the title */
+    margin-bottom: 1rem; /* Space below the title */
+    text-align: center; /* Center the title */
+    font-style: oblique;
+}
+
+.card-text {
+    font-size: 1rem; /* Standard font size for text */
+    color: maroon; /* Darker color for text */
+    margin-bottom: 1rem; /* Space below the text */
+    text-align: center; /* Center the text */
+    font-style: oblique;
+}
+
+/* Image Styles */
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Space above the image */
+}
+
+/* Footer Styles */
+footer {
+    background-color:lightgray; /* Footer background color */
+    color: maroon; /* Footer text color */
+    padding: 10px; /* Padding for the footer */
+    text-align: center; /* Center the text */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+form {
+    margin-top: 20px; /* Space above the form */
+    margin-bottom: 20px; /* Space below the form */
+    padding: 10px; /* Padding for the form */
+    border: 1px solid gray; /* Form border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: lightgray; /* Form background color */
+    color: maroon; /* Form text color */ 
+}
+button {
+    background-color: darkgray !important; /* Button background color */
+    color: maroon; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for the button */
+    margin-top: 10px; /* Space above the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+button:hover {
+    background-color: beige; /* Lighter background color on hover */
+    border-radius: 10px; /* Rounded corners on hover */
+    color: maroon; /* Form button text color on hover */
+}
+.contact-info {
+    margin-top: 20px; /* Space above the contact info */
+    margin-bottom: 20px; /* Space below the contact info */
+    padding: 10px; /* Padding for the contact info */
+    border: 1px solid pink; /* Contact info border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: lightgray; /* Contact info background color */
+    color: maroon; /* Contact info text color */
+    text-align: center; /* Center the text */
+    font-style: oblique;
+}
+
+.bg-dark {
+    background-color: gray; /* Siva boja */
+    color: white; /* Bijeli tekst za kontrast */
+}
+
+.bg-beige {
+    background-color: #f5f5dc; /* Beige boja */
+    color: maroon; /* Crni tekst za kontrast */
+}
+
+/* Stiliziranje list items */
+.list-group-item {
+    border: 2px solid #ccc; /* Sivi okvir */
+    border-radius: 8px; /* Zaobljene ivice */
+    margin-bottom: 10px; /* Razmak između stavki */
+    padding: 15px; /* Unutarnji razmak */
+    transition: transform 0.2s; /* Efekt pri hoveru */
+}
+
+/* Efekt pri hoveru */
+.list-group-item:hover {
+    transform: scale(1.02); /* Lagano povećanje pri hoveru */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sjena pri hoveru */
+}
+
+/* Opcionalno: Stiliziranje linkova */
+a {
+    text-decoration: none; /* Uklanja podcrtavanje */
+}
+
+a:hover {
+    text-decoration: underline; /* Dodaje podcrtavanje pri hoveru */
+    color: gold; /* Zlata boja pri hoveru */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #nav-bar {
+        flex-direction: column; /* Stack navigation items on smaller screens */
+    }
+
+    .card {
+        margin: 0; /* Remove margin on smaller screens */
+    }
+
+    header, footer, .styled-box, .contact-info {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}
+

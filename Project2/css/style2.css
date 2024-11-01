@@ -1,0 +1,466 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    color: maroon;
+    padding: 20px;
+}
+
+/* Header Styles */
+header, .styled-box {
+    background-color: lightgrey;
+    color: maroon;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: maroon;
+    text-align: center;
+}
+
+/* Navbar Styles */
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: lightgray;
+    color: maroon;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#nav-bar .nav-link {
+    color: maroon;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: beige;
+    border-radius: 10px;
+}
+
+/* Carousel Styles */
+.carousel {
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: gray;
+    color: maroon;
+}
+
+.carousel-small {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.small-carousel-img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Skills Carousel */
+#skillsCarousel .carousel-item {
+    padding: 20px 0;
+}
+
+.skill-icon {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#skillsCarousel .carousel-control-prev,
+#skillsCarousel .carousel-control-next {
+    width: 5%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#skillsCarousel .carousel-control-prev-icon,
+#skillsCarousel .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px maroon;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+.card-title, .card-text {
+    color: maroon;
+    text-align: center;
+    font-style: oblique;
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: maroon;
+}
+
+button {
+    background-color: darkgray !important;
+    color: maroon;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: beige;
+}
+
+/* Footer Styles */
+footer {
+    background-color: lightgray;
+    color: maroon;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#hobbyCarousel {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#hobbyCarousel .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#hobbyCarousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    bottom: 20px;
+}
+
+.hobby-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hobby-list {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hobby-list .list-group-item {
+    transition: all 0.3s ease;
+}
+
+.hobby-list .list-group-item:hover {
+    transform: translateX(10px);
+}
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+footer {
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer a:hover {
+    color: #f8f9fa !important;
+}
+
+.skill-card {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+
+.skill-level {
+    margin-top: 15px;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.progress-bar {
+    border-radius: 4px;
+}
+
+#skillsCarousel {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel h5 {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.alert-info {
+    background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);
+    border: none;
+    border-radius: 10px;
+    color: #0c5460;
+    padding: 1.25rem;
+    position: relative;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    backdrop-filter: blur(10px);
+}
+
+#noticeAlert .btn-close
+{
+    position: inherit;
+    display:flex;
+}
+
+.alert-info::before {
+    content: '!';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #17a2b8;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.alert-info strong {
+    color: #17a2b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-right: 8px;
+}
+
+.alert .btn-close {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.alert .btn-close:hover {
+    opacity: 1;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+/* Animation */
+.alert.fade.show {
+    animation: slideInAndFade 0.4s ease-out;
+}
+
+
+@keyframes slideInAndFade {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel, #nav-bar {
+        width: 100%;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    header, footer, .styled-box, .contact-info {
+        padding: 15px;
+    }
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    color: maroon;
+    padding: 20px;
+}
+
+/* Header Styles */
+header, .styled-box {
+    background-color: lightgrey;
+    color: maroon;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar Styles */
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: lightgray;
+    color: maroon;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#nav-bar .nav-link {
+    color: maroon;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: beige;
+    border-radius: 10px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px; /* Razmak između sekcija */
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 20px; /* Razmak između kartica */
+    border: 1px solid lightgray; /* Svetla ivica */
+    border-radius: 5px; /* Zaobljeni uglovi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Blaga senka */
+    background-color: blanchedalmond; /* Pozadina kartice */
+}
+
+/* Naslovi unutar kartica */
+.card-title {
+    color: maroon; /* Boja naslova */
+    font-size: 1.5rem; /* Veličina fonta */
+    text-align: center; /* Centriranje naslova */
+}
+
+/* Tekst unutar kartica */
+.card-text {
+    color: maroon; /* Boja teksta */
+    text-align: center; /* Centriranje teksta */
+}
+
+/* Slike unutar kartica */
+.image-section img {
+    width: 100%; /* Prilagodite širinu slike */
+    border-radius: 0 0 5px 5px; /* Zaobljeni uglovi donjeg dela slike */
+}
+
+/* Footer Styles */
+footer {
+    background-color: lightgray; /* Pozadina footera */
+    color: maroon; /* Boja teksta u footeru */
+    padding: 10px; /* Padding za footer */
+    text-align: center; /* Centriranje teksta */
+    position: relative; /* Pozicija */
+    bottom: 0; /* Na dnu */
+    width: 100%; /* Širina */
+}
+
+footer a {
+    color: maroon; /* Boja linkova */
+    text-decoration: none; /* Uklonite podvlačenje */
+}
+
+footer a:hover {
+    color: #f8f9fa; /* Promena boje na hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        margin: 0; /* Uklonite marginu na manjim ekranima */
+    }
+
+    header, footer, .styled-box {
+        padding: 15px; /* Smanjite padding na manjim ekranima */
+    }
+}

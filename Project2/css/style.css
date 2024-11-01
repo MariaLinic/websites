@@ -1,232 +1,245 @@
-/* General Styles */
-*
-{
-    margin: 0;
-    padding: 0;
-    border-radius: 10px;
-    box-sizing: border-box;
+/* Custom Bootstrap Theme */
+
+:root {
+    --primary: #4361ee;
+    --secondary: #7209b7;
+    --success: #2ecc71;
+    --info: #4cc9f0;
+    --warning: #fca311;
+    --danger: #e63946;
+    --light: #f8f9fa;
+    --dark: #0a192f;
+    --body-bg: #112240;
+    --body-color: #e2e8f0;
 }
 
-
-body 
-{
-    font-family: Arial, sans-serif; /* Font for the entire page */
-    background-color: beige !important; /* Light background color */
-    color: maroon; /* Dark text color */
-    padding: 20px; /* Add padding around the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-bg);
+    color: var(--body-color);
 }
 
-/* Header Styles */
-header{
-    background-color: lightgrey; /* Header background color */
-    color: maroon; /* Header text color */
-    padding: 20px; /* Padding for the header */
-    text-align: center; /* Center the text */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
 }
 
-h1
-{
-    color: maroon; /* Header text color */
-    text-align: center; /* Center the text */
+/* Navbar customization */
+.navbar {
+    background-color: rgba(10, 25, 47, 0.95) !important;
+    backdrop-filter: blur(10px);
 }
 
-.styled-box {
-    background-color: lightgray; /* Box background color */
-    color: maroon; /* Box text color */
-    padding: 10px; /* Padding for the box */
-    text-align: center; /* Center the text */
+.navbar-brand {
+    color: var(--info) !important;
+    font-weight: 700;
 }
 
-.hero 
-{
-    background-color: beige; /* Hero background color */
-    color: maroon; /* Hero text color */
-    padding: 20px; /* Padding for the hero */
-    text-align: center; /* Center the text */
-    position: relative; /* Positioning for hero */
+.navbar-nav .nav-link {
+    color: var(--body-color) !important;
+    position: relative;
 }
 
-/* Navbar Styles */
-#nav-bar 
-{
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: lightgray; /* Navbar background color */
-    color: maroon; /* Navbar text color */
-    text-align: center;
-    padding: 10px; /* Padding for the navbar */
-    margin-bottom: 20px; /* Space below the navbar */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, var(--primary), var(--info));
+    transition: width 0.3s ease;
 }
 
-#nav-bar .nav-link {
-    font-style: oblique;
-    color: maroon; /* Navbar link color */
-    text-decoration: none; /* Remove underline from navbar links */
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
 }
 
-.nav-link:hover {
-    background-color: beige; /* Lighter background color on hover */
-    border-radius: 10px; /* Rounded corners on hover */
-    color: maroon; /* Navbar link text color on hover */
+/* Button customization */
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
 }
 
-.carousel-small {
-    max-width: 600px; /* Postavite maksimalnu širinu karusela */
-    margin: 0 auto; /* Centrirajte karusel */
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    border: none;
 }
 
-.small-carousel-img {
-    height: auto; /* Održavajte proporcije slika */
-    max-height: 400px; /* Postavite maksimalnu visinu slika */
-    object-fit: cover; /* Održavajte proporcije slika unutar okvira */
-}
-.carousel {
-    margin-bottom: 20px; /* Space below the carousel */
-    width: 100%; /* Full width */
-    position: center;
-    border: 1px solid lightgray; /* Carousel border color */
-    border-radius: 10px; /* Rounded corners */
-    background-color: gray; /* Carousel background color */
-    color: maroon; /* Carousel text color */
-
-}
-.carousel-button {
-    background-color: lightgray; /* Button background color */
-    color: maroon; /* Button text color */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px; /* Padding for the button */
-    margin-top: 10px; /* Space above the button */
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--secondary), var(--primary));
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
 }
 
-/* Card Styles */
+/* Card customization */
 .card {
-    border: 1px solid gray; /* Card border color */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 4px maroon; /* Subtle shadow */
-    padding: 10px; /* Padding for the card */
-    background-color: blanchedalmond; /* Card background color */
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-title {
-    font-size: 1.5rem; /* Larger font size for the title */
-    color: maroon; /* Darker color for the title */
-    margin-bottom: 1rem; /* Space below the title */
-    text-align: center; /* Center the title */
-    font-style: oblique;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card-text {
-    font-size: 1rem; /* Standard font size for text */
-    color: maroon; /* Darker color for text */
-    margin-bottom: 1rem; /* Space below the text */
-    text-align: center; /* Center the text */
-    font-style: oblique;
+/* Form customization */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--body-color);
+    border-radius: 8px;
 }
 
-/* Image Styles */
-.img-fluid {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 20px; /* Space above the image */
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--info);
+    box-shadow: 0 0 0 0.2rem rgba(76, 201, 240, 0.25);
+    color: var(--body-color);
 }
 
-/* Footer Styles */
-footer {
-    background-color: rgb(238, 238, 180); /* Footer background color */
-    color: maroon; /* Footer text color */
-    padding: 10px; /* Padding for the footer */
-    text-align: center; /* Center the text */
-    position: relative; /* Positioning for footer */
-    bottom: 0; /* Stick to the bottom */
-    width: 100%; /* Full width */
+/* Custom utility classes */
+.bg-gradient {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--body-bg) 100%);
 }
 
-form {
-    margin-top: 20px; /* Space above the form */
-    margin-bottom: 20px; /* Space below the form */
-    padding: 10px; /* Padding for the form */
-    border: 1px solid gray; /* Form border color */
-    border-radius: 5px; /* Rounded corners */
-    background-color: lightgray; /* Form background color */
-    color: maroon; /* Form text color */ 
-}
-button {
-    background-color: darkgray !important; /* Button background color */
-    color: maroon; /* Button text color */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px; /* Padding for the button */
-    margin-top: 10px; /* Space above the button */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-button:hover {
-    background-color: beige; /* Lighter background color on hover */
-    border-radius: 10px; /* Rounded corners on hover */
-    color: maroon; /* Form button text color on hover */
-}
-.contact-info {
-    margin-top: 20px; /* Space above the contact info */
-    margin-bottom: 20px; /* Space below the contact info */
-    padding: 10px; /* Padding for the contact info */
-    border: 1px solid pink; /* Contact info border color */
-    border-radius: 5px; /* Rounded corners */
-    background-color: lightgray; /* Contact info background color */
-    color: maroon; /* Contact info text color */
-    text-align: center; /* Center the text */
-    font-style: oblique;
+.text-gradient {
+    background: linear-gradient(45deg, var(--primary), var(--info));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
-.bg-dark {
-    background-color: gray; /* Siva boja */
-    color: white; /* Bijeli tekst za kontrast */
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.bg-beige {
-    background-color: #f5f5dc; /* Beige boja */
-    color: maroon; /* Crni tekst za kontrast */
+.animate-fadeInUp {
+    animation: fadeInUp 1s ease forwards;
 }
 
-/* Stiliziranje list items */
-.list-group-item {
-    border: 2px solid #ccc; /* Sivi okvir */
-    border-radius: 8px; /* Zaobljene ivice */
-    margin-bottom: 10px; /* Razmak između stavki */
-    padding: 15px; /* Unutarnji razmak */
-    transition: transform 0.2s; /* Efekt pri hoveru */
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-/* Efekt pri hoveru */
-.list-group-item:hover {
-    transform: scale(1.02); /* Lagano povećanje pri hoveru */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sjena pri hoveru */
+::-webkit-scrollbar-track {
+    background: var(--dark);
 }
 
-/* Opcionalno: Stiliziranje linkova */
-a {
-    text-decoration: none; /* Uklanja podcrtavanje */
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
 }
 
-a:hover {
-    text-decoration: underline; /* Dodaje podcrtavanje pri hoveru */
-    color: gold; /* Zlata boja pri hoveru */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
 }
-/* Responsive Styles */
+
+/* Footer customization */
+.footer {
+    background-color: rgba(10, 25, 47, 0.95);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .carousel {
-        width: 100%; /* Full width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
+    .container {
+        padding: 0 1rem;
     }
-
-    #nav-bar {
-        flex-direction: column; /* Stack navigation items on smaller screens */
-    }
-
-    .card {
-        margin: 0; /* Remove margin on smaller screens */
-    }
-
-    header, footer, .styled-box, .contact-info {
-        padding: 15px; /* Reduce padding on smaller screens */
+    
+    h1 {
+        font-size: 2rem;
     }
 }
 
+    .carousel-item img {
+        object-fit: cover;
+        height: 400px; /* Prilagodite visinu prema potrebi */
+    }
+
+    .text-dark-blue {
+        color: #0a192f !important;
+        transition: color 0.3s ease;
+    }
+
+    /* Card hover efekti i stilizacija */
+.hover-card {
+    background-color: rgba(17, 34, 64, 0.6);
+    border: 1px solid rgba(76, 201, 240, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(17, 34, 64, 0.8);
+    border-color: var(--info);
+    box-shadow: 0 8px 20px rgba(76, 201, 240, 0.15);
+}
+
+/* Stilizacija teksta unutar kartica */
+.hover-card .card-body h5 a {
+    color: var(--info) !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hover-card .card-body h5 a:hover {
+    color: var(--primary) !important;
+}
+
+.hover-card .card-body small.text-muted {
+    color: #8892b0 !important;
+}
+
+/* Ikone u karticama */
+.hover-card .card-body i {
+    transition: transform 0.3s ease;
+}
+
+.hover-card:hover .card-body i {
+    transform: scale(1.1);
+}
+
+/* Posebne boje za različite ikone */
+.text-primary { color: var(--primary) !important; }
+.text-info { color: var(--info) !important; }
+.text-warning { color: var(--warning) !important; }
+.text-danger { color: var(--danger) !important; }
+.text-purple { color: var(--secondary) !important; }
+.text-secondary { color: #8892b0 !important; }
+
+/* Dodatni efekti za kartice */
+.hover-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(67, 97, 238, 0.1),
+        rgba(76, 201, 240, 0.1)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+
+.hover-card:hover::before {
+    opacity: 1;
+}

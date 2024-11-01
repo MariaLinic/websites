@@ -1,0 +1,163 @@
+/* Osnovni stilovi */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #FF4E50, #F9D423);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header stilovi */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+}
+
+.navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF4E50 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: green !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FF4E50 !important;
+    transform: translateY(-3px);
+}
+
+/* Hero sekcija */
+.hero {
+    background: url('img/just-do-it.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FF4E50, 0 0 20px #FF4E50;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF4E50, 0 0 40px #FF4E50;
+    }
+}
+
+/* Kartice */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Slike */
+.image-section img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #FF4E50, #F9D423);
+}
+
+footer a {
+    color: #F9D423;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #FF4E50;
+    text-decoration: none;
+}
+
+/* Animacije */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Responsivnost */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+}
